@@ -6,6 +6,7 @@ export async function GET(request: Request) {
     await connectDB();
     try{
          const projects = await ProjectModel.find({})
+         console.log("Projects retrieved successfully:", projects);
          return NextResponse.json({projects})
     }
     catch(error: unknown){

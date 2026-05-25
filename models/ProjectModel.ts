@@ -1,10 +1,13 @@
 import mongoose from "mongoose";
 
-const Schema = new mongoose.Schema({
-    projectdetails:{
-        type:Array,
-    }
-})
+const projectSchema = new mongoose.Schema({
+  projects:{
+    type: Array
+  }
+});
 
-const ProjectModel = mongoose.models.Projectdetail || mongoose.model('Projectdetail', Schema)
+const ProjectModel =
+  mongoose.models.Projectdetail ||
+  mongoose.model("Projectdetail", projectSchema);
+
 export default ProjectModel;
