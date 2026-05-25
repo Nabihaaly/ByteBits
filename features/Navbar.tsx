@@ -33,7 +33,7 @@ export default function Home() {
           href="/"
           className={`${CyGroteskmed.className} text-xl font-bold transition-all duration-300 hover:text-[#C9A24D]`}
         >
-          NextByte Studio
+          ByteBits Studio
         </Link>
 
         {/* Desktop Navigation */}
